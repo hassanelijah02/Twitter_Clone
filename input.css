@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .link-active {
+        @apply flex items-center space-x-3 text-black xl:hover:bg-gray-300 rounded-full;
+    }
+    .icon-name {
+        @apply  hidden xl:block  font-primary text-[1.3em] text-black;
+    }
+
+}
+@layer utilities {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translate(0, -50%);
+        
+    }
+    .center_dash {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .width {
+        width: inherit;
+    }
+    
+    .dot {
+        content: '';
+        background-color: rgb(55, 65, 81);
+        position: absolute;
+        height: .13em;
+        width: .13em;
+        display: block;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: .4em;
+        
+    }
+    .notification {
+        content: '';
+        background-color: #1d9bf0;
+        position: absolute;
+        height: .4em;
+        width: .4em;
+        display: block;
+        border-radius: 50%;
+        top: 23%;
+        transform: translate(0, -50%);
+        left: 2.1em;
+        
+    }
+    
+    
+    
+}
